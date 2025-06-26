@@ -65,10 +65,10 @@ if(BUILD_RDASBUNDLE)
   ecbuild_bundle( PROJECT crtm SOURCE "../sorc/crtm" )
 
 # Build GSI-B
-#   option(BUILD_GSIBEC "Build GSI-B" OFF)
-#   if(BUILD_GSIBEC)
-#     ecbuild_bundle( PROJECT gsibec SOURCE "../sorc/gsibec" )
-#   endif()
+   option(BUILD_GSIBEC "Build GSI-B" OFF)
+   if(BUILD_GSIBEC)
+     ecbuild_bundle( PROJECT gsibec SOURCE "../sorc/gsibec" )
+   endif()
 
 # Core JEDI repositories
   ecbuild_bundle( PROJECT oops SOURCE "../sorc/oops" )
