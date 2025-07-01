@@ -1,0 +1,59 @@
+test:
+  float relative tolerance: 0.00000001
+  integer tolerance: 0
+  reference filename: testoutput/hofx3d_ropp.ref
+  log output filename: testoutput/hofx3d_ropp.run
+  test output filename: testoutput/hofx3d_ropp.run.ref
+time window:
+  begin: '2018-04-14T21:00:00Z'
+  length: PT6H
+geometry:
+  nml_file: "./Data/480km/namelist.atmosphere_2018041500"
+  streams_file: "./Data/480km/streams.atmosphere"
+state:
+  state variables:
+  - air_temperature
+  - water_vapor_mixing_ratio_wrt_moist_air
+  - eastward_wind
+  - northward_wind
+  - air_pressure_at_surface
+  - cloud_liquid_water
+  - cloud_liquid_ice
+  - rain_water
+  - snow_water
+  - graupel
+  - air_potential_temperature
+  - dry_air_density
+  - u
+  - water_vapor_mixing_ratio_wrt_dry_air
+  - air_pressure
+  - landmask
+  - seaice_fraction
+  - snowc
+  - skin_temperature_at_surface
+  - ivgtyp
+  - isltyp
+  - snowh
+  - vegetation_area_fraction
+  - eastward_wind_at_10m
+  - northward_wind_at_10m
+  - lai
+  - smois
+  - tslb
+  filename: "./Data/480km/bg/restart.2018-04-15_00.00.00.nc"
+  date: '2018-04-15T00:00:00Z'
+observations:
+  observers:
+  - obs space:
+      name: GnssroBndROPP1D
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/gnssro_obs_2018041500_s.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/obsout_hofx3d_ropp_gnssrobndropp1d.nc4
+      simulated variables: [bendingAngle]
+    obs operator:
+      name: GnssroBndROPP1D

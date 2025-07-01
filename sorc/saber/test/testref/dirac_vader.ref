@@ -1,0 +1,14 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    virtual_temperature: 1.0000000000000000e+00
+    water_vapor_mixing_ratio_wrt_moist_air: 1.0000000000000000e+00
+Adjoint test for block vader variable change passed
+Adjoint test for block ID passed
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    virtual_temperature: 1.0000000000000000e+00
+    water_vapor_mixing_ratio_wrt_moist_air: 1.0000000000000000e+00

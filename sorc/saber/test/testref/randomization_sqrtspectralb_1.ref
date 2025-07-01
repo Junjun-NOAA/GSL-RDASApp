@@ -1,0 +1,24 @@
+Member 0: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: F12 [1152]
+  Fields:
+    eastward_wind: 3.1390575368668937e+02
+    mu: 1.1449042017057300e+02
+    northward_wind: 3.1173582902908817e+02
+    unbalanced_pressure_levels_minus_one: 3.2697762909863736e+03
+Member 1: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: F12 [1152]
+  Fields:
+    eastward_wind: 3.1267382412208514e+02
+    mu: 1.1164023410753298e+02
+    northward_wind: 3.1974164276855663e+02
+    unbalanced_pressure_levels_minus_one: 3.1537346952413936e+03
+Randomized variance: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: F12 [1152]
+  Fields:
+    eastward_wind: 8.7867140358168263e+02
+    mu: 8.0393884433444796e+01
+    northward_wind: 9.3364003697514227e+02
+    unbalanced_pressure_levels_minus_one: 7.3685489642178014e+04

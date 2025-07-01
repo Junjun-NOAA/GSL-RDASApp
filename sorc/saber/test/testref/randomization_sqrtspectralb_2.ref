@@ -1,0 +1,12 @@
+Member 0: 
+- Valid time: 2016-01-01T16:00:00Z
+  Geometry: F12 [1152]
+  Fields:
+    air_potential_temperature: 1.2583157618179423e+03
+    cloud_ice_mixing_ratio_wrt_moist_air_and_condensed_water: 3.9025307635601241e-04
+    cloud_liquid_water_mixing_ratio_wrt_moist_air_and_condensed_water: 6.3000086876626642e-04
+    dimensionless_exner_function_levels_minus_one: 2.8332460359295333e-02
+    dry_air_density_levels_minus_one: 3.0429054984431214e-01
+    eastward_wind: 3.1231015782042942e+02
+    northward_wind: 3.1257907379318164e+02
+    water_vapor_mixing_ratio_wrt_moist_air_and_condensed_water: 3.6427245223435212e-02

@@ -1,0 +1,28 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    eastward_wind: 1.0000000000000000e+00
+    northward_wind: 0.0000000000000000e+00
+Adjoint test for block Ensemble passed
+Square-root test for block Ensemble passed
+Covariance(hybrid) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    eastward_wind: 9.5069162749111804e+00
+    northward_wind: 1.0248748436398657e+01
+Adjoint test for block Ensemble passed
+Square-root test for block Ensemble passed
+Covariance(hybrid1_SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    eastward_wind: 9.5069162749111804e+00
+    northward_wind: 1.0248748436398657e+01
+Covariance(hybrid2_ensemble) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    eastward_wind: 9.5069162749111804e+00
+    northward_wind: 1.0248748436398657e+01

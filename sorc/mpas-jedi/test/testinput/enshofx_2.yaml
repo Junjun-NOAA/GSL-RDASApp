@@ -1,0 +1,157 @@
+time window:
+  begin: &date '2018-04-14T21:00:00Z'
+  length: PT6H
+geometry:
+  nml_file: "./Data/480km/namelist.atmosphere_2018041500"
+  streams_file: "./Data/480km/streams.atmosphere"
+model:
+  name: MPAS
+  tstep: PT30M
+  finalnorm: 0.020383
+  tolerance: 0.005
+  variables: &vars
+  - air_temperature
+  - water_vapor_mixing_ratio_wrt_moist_air
+  - eastward_wind
+  - northward_wind
+  - air_pressure_at_surface
+initial condition:
+  variables: *vars
+  filename: Data/480km/bg/ensemble/mem02/x1.2562.init.2018-04-14_21.00.00.nc
+  date: *date
+observations:
+  observers:
+  - obs space:
+      name: Radiosonde
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/sondes_obs_2018041500_m.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_sondes.nc4
+      simulated variables: [airTemperature, windEastward, windNorthward, specificHumidity]
+    obs operator:
+      name: VertInterp
+      observation alias file: testinput/obsop_name_map.yaml
+    obs bias: {}
+  - obs space:
+      name: Aircraft
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/aircraft_obs_2018041500_m.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_aircraft.nc4
+      simulated variables: [airTemperature, windEastward, windNorthward, specificHumidity]
+    obs operator:
+      name: VertInterp
+      observation alias file: testinput/obsop_name_map.yaml
+    obs bias: {}
+  - obs space:
+      name: Satwind
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/satwind_obs_2018041500_m.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_satwind.nc4
+      simulated variables: [windEastward, windNorthward]
+    obs operator:
+      name: VertInterp
+      observation alias file: testinput/obsop_name_map.yaml
+    obs bias: {}
+  - obs space:
+      name: GnssroRefNCEP
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/gnssro_obs_2018041500_s.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_gnssroref.nc4
+      simulated variables: [atmosphericRefractivity]
+    obs operator:
+      name: GnssroRefNCEP
+      obs options:
+        ro_top_meter: 30000
+        use_compress: 0
+    obs bias: {}
+  - obs space:
+      name: GnssroBndROPP1D
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/gnssro_obs_2018041500_s.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_gnssrobndropp1d.nc4
+      simulated variables: [bendingAngle]
+    obs operator:
+      name: GnssroBndROPP1D
+      obs options:
+        use_compress: 0
+    obs bias: {}
+  - obs operator:
+      name: CRTM
+      Absorbers: [H2O,O3]
+      Clouds: [Water, Ice, Rain, Snow, Graupel]
+      Cloud_Fraction: 1.0
+      SurfaceWindGeoVars: uv
+      obs options:
+        Sensor_ID: amsua_n19
+        EndianType: little_endian
+        CoefficientPath: Data/
+    obs space:
+      name: CRTM
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/amsua_n19_obs_2018041500_m.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_amsua.nc4
+      simulated variables: [brightnessTemperature]
+      channels: 1-15
+    obs bias: {}
+  - obs space:
+      name: SfcPCorrected
+      obsdatain:
+        engine:
+          type: H5File
+          obsfile: Data/ufo/testinput_tier_1/sfc_obs_2018041500_m.nc4
+      obsdataout:
+        engine:
+          type: H5File
+          obsfile: Data/os/ensemble/mem002/obsout_enshofx_sfc.nc4
+      simulated variables: [stationPressure]
+    obs operator:
+      name: SfcPCorrected
+      da_psfc_scheme: UKMO   # or WRFDA
+    linear obs operator:
+      name: Identity
+      observation alias file: testinput/obsop_name_map.yaml
+    obs error:
+      covariance model: diagonal
+    obs filters:
+    - filter: PreQC
+      maxvalue: 3
+      apply at iterations: 0
+    - filter: Difference Check
+      reference: MetaData/stationElevation
+      value: GeoVaLs/height_above_mean_sea_level_at_surface
+      threshold: 500
+    - filter: Background Check
+      filter variables:
+      - name: stationPressure
+      threshold: 10
+prints:
+  frequency: PT3H

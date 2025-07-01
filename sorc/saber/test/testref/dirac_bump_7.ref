@@ -1,0 +1,49 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L72x46 [3312]
+  Fields:
+    air_horizontal_streamfunction: 1.0000000000000000e+00
+    air_horizontal_velocity_potential: 0.0000000000000000e+00
+    air_temperature: 0.0000000000000000e+00
+    air_pressure_at_surface: 0.0000000000000000e+00
+       Independent levels:  1[4]
+          Subset Sc0 size:             3170
+          Domain area (% of Earth area): 0.100E+03%
+             Level   1 ~> 100.0%
+             Level   2 ~> 100.0%
+             Level   3 ~> 100.0%
+             Level   4 ~> 100.0%
+             Level   1 ~> -0.100E+01 vert. coord.
+             Level   2 ~> -0.500E+01 vert. coord.
+             Level   3 ~> -0.900E+01 vert. coord.
+             Level   4 ~> -0.110E+02 vert. coord.
+          nc2 =       89
+Adjoint test for block BUMP_VerticalBalance passed
+Norm of input parameter StdDev: 3.2367672341787118e+08
+Adjoint test for block StdDev passed
+       Independent levels:  1[4]
+          Subset Sc0 size:             3170
+          Domain area (% of Earth area): 0.100E+03%
+             Level   1 ~> 100.0%
+             Level   2 ~> 100.0%
+             Level   3 ~> 100.0%
+             Level   4 ~> 100.0%
+             Level   1 ~> -0.100E+01 vert. coord.
+             Level   2 ~> -0.500E+01 vert. coord.
+             Level   3 ~> -0.900E+01 vert. coord.
+             Level   4 ~> -0.110E+02 vert. coord.
+       Independent levels:  1[1]
+          Subset Sc0 size:             3170
+          Domain area (% of Earth area): 0.100E+03%
+             Level   1 ~> 100.0%
+             Level   1 ~>  0.100E+01 vert. coord.
+Adjoint test for block BUMP_NICAS passed
+Square-root test for block BUMP_NICAS passed
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L72x46 [3312]
+  Fields:
+    air_horizontal_streamfunction: 3.6738259144564355e+11
+    air_horizontal_velocity_potential: 3.4330582222709686e+10
+    air_temperature: 5.1462394702503952e+03
+    air_pressure_at_surface: 1.6780108751963473e+02

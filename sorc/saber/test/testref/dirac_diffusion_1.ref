@@ -1,0 +1,13 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: CS-LFR-12 [864]
+  Fields:
+    air_horizontal_streamfunction: 1.0000000000000000e+00
+    air_horizontal_velocity_potential: 0.0000000000000000e+00
+Adjoint test for block diffusion passed
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: CS-LFR-12 [864]
+  Fields:
+    air_horizontal_streamfunction: 7.1008591544066118e+00
+    air_horizontal_velocity_potential: 0.0000000000000000e+00

@@ -1,0 +1,45 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: structured [3763]
+  Fields:
+    air_horizontal_streamfunction: 2.8284271247461903e+00
+    air_horizontal_velocity_potential: 1.0000000000000000e+00
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+Norm of output parameter normalized horizontal length-scale: 3.4440397359364169e+03
+Norm of output parameter weight - 0: 1.1660633257222273e+02
+Norm of output parameter weight - 1: 1.3769036427394991e+02
+Norm of output parameter weight - 2: 1.1658735441856757e+02
+Norm of output parameter normalization - 0: 3.2922227652017420e+02
+Norm of output parameter normalization - 1: 3.2922227652017420e+02
+Norm of output parameter normalization - 2: 3.2922227652017955e+02
+Adjoint test for block FastLAM passed
+Square-root test for block FastLAM passed
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: structured [3763]
+  Fields:
+    air_horizontal_streamfunction: 6.9086231569106387e+00
+    air_horizontal_velocity_potential: 8.8282852527008959e+00

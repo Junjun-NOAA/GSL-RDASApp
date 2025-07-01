@@ -1,0 +1,17 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: F15 [1800]
+  Fields:
+    air_horizontal_streamfunction: 1.0000000000000000e+00
+Adjoint test for block spectral to gauss passed
+Adjoint test for block spectral correlation passed
+Covariance(SABER) diagnostics:
+- Variances at Dirac points:
+  + Value for variable air_horizontal_streamfunction, subwindow 0, at (longitude, latitude, vertical index) point (0.00000, -2.95042, 1): 1.0000000000000000e+00
+- Covariances at diagnostic points:
+  + Value for variable air_horizontal_streamfunction, subwindow 0, at (longitude, latitude, vertical index) point (18.00000, 20.65284, 2): 2.2906665881770122e-01
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: F15 [1800]
+  Fields:
+    air_horizontal_streamfunction: 1.5534525177102074e+01

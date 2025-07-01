@@ -1,0 +1,16 @@
+Member 0: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: CS-LFR-14 [1176]
+  Fields:
+    air_horizontal_streamfunction: 3.0406446715119565e+08
+    air_horizontal_velocity_potential: 2.8303058889608413e+08
+    mu: 9.0483049143251108e+01
+    unbalanced_pressure_levels_minus_one: 3.0962663795198118e+03
+Member 1: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: CS-LFR-14 [1176]
+  Fields:
+    air_horizontal_streamfunction: 2.9042050170791298e+08
+    air_horizontal_velocity_potential: 2.6842726591625845e+08
+    mu: 9.3900526079653105e+01
+    unbalanced_pressure_levels_minus_one: 2.8163065009395741e+03

@@ -1,0 +1,21 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    air_horizontal_streamfunction: 1.0000000000000000e+00
+Norm of input parameter StdDev: 4.0693857173965277e+01
+       Independent levels:  1[2]
+          Subset Sc0 size:              762
+          Domain area (% of Earth area): 0.100E+03%
+             Level   1 ~> 100.0%
+             Level   2 ~> 100.0%
+             Level   1 ~>  0.100E+01 vert. coord.
+             Level   2 ~>  0.200E+01 vert. coord.
+Square-root test for block BUMP_NICAS passed
+Adjoint test for block Ensemble passed
+Square-root test for block Ensemble passed
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: L40x21 [840]
+  Fields:
+    air_horizontal_streamfunction: 2.0497754116476830e+00

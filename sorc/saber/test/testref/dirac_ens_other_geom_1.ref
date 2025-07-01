@@ -1,0 +1,17 @@
+Input Dirac increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: CS-LFR-14 [1176]
+  Fields:
+    air_horizontal_streamfunction: 1.0000000000000000e+00
+    air_horizontal_velocity_potential: 0.0000000000000000e+00
+Covariance(SABER) diagnostics:
+- Variances at Dirac points:
+  + Value for variable air_horizontal_streamfunction, subwindow 0, at (longitude, latitude, vertical index) point (176.78571, 3.20924, 1): 4.4639777062866986e+08
+- Covariances at diagnostic points:
+  + Value for variable air_horizontal_streamfunction, subwindow 0, at (longitude, latitude, vertical index) point (176.78571, 3.20924, 1): 4.4639777062866986e+08
+Covariance(SABER) * Increment:
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: CS-LFR-14 [1176]
+  Fields:
+    air_horizontal_streamfunction: 4.6173320365750053e+10
+    air_horizontal_velocity_potential: 0.0000000000000000e+00

@@ -1,0 +1,14 @@
+    FastLAM interpolation accuracy test passed
+    FastLAM interpolation adjoint test passed
+    FastLAM redToRows test passed
+    FastLAM rowsToCols test passed
+Member 0: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: structured [3763]
+  Fields:
+    air_horizontal_streamfunction: 8.1488556410001294e+01
+Member 1: 
+- Valid time: 2010-01-01T12:00:00Z
+  Geometry: structured [3763]
+  Fields:
+    air_horizontal_streamfunction: 9.1289067615923543e+01
