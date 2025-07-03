@@ -14,7 +14,9 @@ saber/gsi/grid/gsi_grid_mod.f90
 saber/gsi/covariance/gsi_covariance_mod.f90    
 gsibec/gsi/control2state_ad.f90    
 gsibec/gsi/control2state.f90    
-gsibec/gsi/normal_rh_to_q.f90    
+gsibec/gsi/normal_rh_to_q.f90
+gsibec/gsi/gsi_rfv3io_mod.f90 (multiple outloop)
+gsibec/gsi/gsibec/gsimod.F90 (new berror reading)
 mpasjedi/LinearVariableChange/Control2Analysis/mpasjedi_linvarcha_c2a_mod.F90    
 
 
