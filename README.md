@@ -17,7 +17,8 @@ gsibec/gsi/control2state.f90
 gsibec/gsi/normal_rh_to_q.f90
 gsibec/gsi/gsi_rfv3io_mod.f90 (multiple outloop)    
 gsibec/gsi/gsibec/gsimod.F90 (new berror reading)
-mpasjedi/LinearVariableChange/Control2Analysis/mpasjedi_linvarcha_c2a_mod.F90    
+mpasjedi/LinearVariableChange/Control2Analysis/mpasjedi_linvarcha_c2a_mod.F90   
+gsibec/gsi/mod_fv3_lola.f90
 
 
 
